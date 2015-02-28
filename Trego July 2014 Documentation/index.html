@@ -1,0 +1,800 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Trego E-commerce Magento Theme documentation</title>
+<link rel="stylesheet" type="text/css" href="library/style.css"/>
+<script type="text/javascript" src="library/scripts/jquery.js"></script>
+<script type="text/javascript" src="library/scripts/custom.js"></script>
+</head>
+<body>
+<a href="#header" class="totop">Back to top</a>
+<div id="header">
+	<div id="inner">
+				<div id="logo">
+							<img src="library/images/logo.png" />
+				</div>
+				<div id="meta">
+							<h5>Documentation for Trego - Nice Magento Theme</h5>
+							<div id="nav">
+					<ul id="tabnav">
+						<li id="welcome"><a href="#tab1">Home</a></li>
+						<li id="start"><a href="#tab2">Getting started</a></li>
+						<li><a href="#tab4">Homepage</a></li>
+						<li><a href="#tab3">Theme Settings</a></li>
+						<li><a href="#tab5">Theme Design</a></li>
+						<li><a href="#tab7">Trego Extensions</a></li>
+						<li><a href="#tab9">Changelog</a></li>
+					</ul>
+				</div>
+				</div>
+				
+	</div>
+</div>
+<div id="wrapper">
+	<div id="tab1" class="contentwrap">
+		<div class="pagecontent">
+			<h4>Trego Documentation</h4>
+			<h1 class="nomargin">Thank you so much for purchasing </h1>
+			<h1><strong>Trego - Nice Magento Theme!</strong></h1>
+			
+			<p>
+				This document covers the installation and use of this theme and reveals answers to common problems and issues - I 
+				encourage you to read this document thoroughly if you are experiencing any difficulties.
+			</p>
+
+			<p>
+				If you get any problems with Trego, please follow us on themeforest comment form or email us through Themeforest profile page.
+			</p>
+		
+			<h1><a href="#tab2" id="startbtn">Get started!</a></h1>
+			
+			<p><br/></p>
+			<p>&nbsp;</p>
+		</div>
+	</div>
+	<div id="tab2" class="contentwrap">
+		<div class="sidebar">
+			<ul>
+				<li><a href="#installation">Installation</a></li>
+				<li><a href="#activation">Activation</a></li>
+				<li><a href="#sample">Install sample content</a></li>
+				<a href="#header" class="totop">Back to top</a>
+			</ul>
+		</div>
+		<div class="pagecontent">
+		
+			<h1>Getting started</h1>
+			
+			<p>
+				To install this theme you must have a working version of Magento already installed. For information in 
+				regard to installing the Magento platform, please see the Magento installation guide - 
+				<a href="http://www.magentocommerce.com/knowledge-base/entry/magento-installationguide">http://www.magentocommerce.com/knowledge-base/entry/magento-installationguide</a>
+			</p>
+			
+			<p>&nbsp;</p>
+			
+			<ol>
+				<li>Extract the theme package(downloaded file from themeforest) on your computer and navigate inside "Theme Files" directory.</li>
+				<li>Unzip "Trego_Theme.zip" file – it contains five directories: app, js, skin, media, lib</li>
+				<li>Using your FTP client upload 5 directories to your Magento's root directory (Magento's root directory is where you can find Magento's basic files, such as: index.php and get.php).</li>
+			</ol>
+			
+			<p>&nbsp;</p>
+			
+			<h2 id="activation"> Activation</h2>
+
+			<p><strong>Note:</strong></p>
+			<ul>
+				<li>We recommend you to backup your original files and database data before activation.</li>
+			</ul>
+			<br/>
+			
+			<p>
+				Once you have uploaded the theme, activate your theme in Configuration &gt; Design &gt; Themes(Set the "Default" field as pasted theme directory name, its "trego" in our case.)<strong><br/></strong>
+			</p>
+
+			<img src="library/images/installation.png"/><br/>
+
+			<p><strong>Important:</strong></p>
+
+			<ul>
+				<li>After activation, please logout and login again to make all adjustments apply.</li>
+			</ul>
+						
+			<br/>
+			
+			<h2 id="sample">Install sample content</h2>
+			
+			<p>
+				To install demo products and categories you can use the sample data from the official Magento site (it must be installed prior to the basic Magento installation):
+				<br>
+				<a href="http://www.magentocommerce.com/knowledge-base/entry/installing-sample-dataarchive-for-magento-1610">http://www.magentocommerce.com/knowledge-base/entry/installing-sample-dataarchive-for-magento-1610</a>
+				<br>
+				<a href="http://www.magentocommerce.com/download">http://www.magentocommerce.com/download</a>
+			</p>
+
+			<br/>
+
+			<p><strong>Important:</strong></p>
+
+			<ul>
+                <li><strong>Import sample static blocks and cms pages</strong> - Please import the sample static blocks and cms pages in System / Configuration / TREGO 2.1.0 / Theme Settings / Theme Installation.(Please clear cache then logout and login again, when you get 404 error on this page.)</li>
+				<li><strong>Change Layout Column</strong> - Please set layout to 1 column in CMS > Pages as trego supports for 1 column.</li>
+				<li><strong>Change Logo Path</strong> - Please change the logo image path from default "logo.gif" to "logo.png" in System > Configuration > Design > Header.</li>
+				<li><strong>Install Sample Images/Static blocks</strong> - To get sample images and static blocks like homepage slider image, please follow the instruction in Theme Settings > Theme Installation.</li>
+			</ul>
+			<br/>
+
+			<h2 id="sample">How to update Trego version?</h2>
+			<p>
+				If you want to update Trego version on a pre installed site, please go through follow steps.
+			</p>
+			<ul>
+				<li>Back up files for pre-configured data in this directory "/skin/frontend/default/trego/css/configed/".</li>
+				<li>Copy/Paste all files from new version(extracted files from latest version) by replacing files from previous version.</li>
+				<li>Paste the configuration files by backuped files in "/skin/frontend/default/trego/css/configed/".</li>
+			</ul>
+			
+			<!--<p>
+				You can also import all images we used for our live preview.
+			</p>
+			
+			<ol>
+				<li>In our support forum you can find the folder with all images of our live preview</li>
+				<li>Put this folder in your wp-content/upload</li>
+			</ol>-->
+		
+		</div>
+	</div>
+
+	<!-- Homepage Settings -->
+	<div id="tab4" class="contentwrap">
+		<div class="sidebar">
+			<ul>
+				<li><a href="#slider_setting">Building Slider</a></li>
+				<li><a href="#menu_setting">Building Menu</a></li>
+			</ul>
+		</div>
+				
+		<div class="pagecontent">
+		
+			<h1>Homepage Settings</h1>
+
+			<p>Trego supports various types of slider and menu for homepage view. Go to System > Configuration > Trego Extensions > Homepage Slider & Menu section in Magento admin panel to configure the homepage.</p>
+			
+			<h2 id="slider_setting">Slider Settings</h2>
+			
+			<p>In this tab, you can set options related to configure slider.</p>
+
+			<p>Trego supports various types of slider and menu for homepage view. Go to System > Configuration > Trego Extensions > Homepage Slider & Menu section in Magento admin panel to configure the homepage.</p>
+			<ul>
+				<li><strong>Enable Homepage Slider</strong> - If set to yes, enables background slider for homepage.</li>
+				<li><strong>Homepage Slider Type</strong> - Choose slider type for homepage.(6 types)</li>
+				
+				<br>
+				<p>BxSlider1</p>
+				<img src="library/images/slider1.png" />
+				<br>
+				<p>BxSlider2</p>
+				<img src="library/images/slider2.png" />
+				<br>
+				<p>BxSlider3</p>
+				<img src="library/images/slider3.png" />
+				<br>
+				<p>Vertical Showcase Slider</p>
+				<img src="library/images/slider4.png" />
+				<br>
+				<p>Revolution Slider</p>
+				<img src="library/images/slider5.png" />
+				<br>
+				<p>Tile Gallery</p>
+				<img src="library/images/slider6.png" />
+				<br><br>
+				<p><strong>How to edit content of homepage slider?</strong></p>
+				<p>
+					In order to edit content of homepage slider, please go to CMS > Static Blocks and edit contents of static blocks for each sliders .
+				</p>
+
+				<br>
+				<p><strong>Important:</strong></p>
+				<p>
+					In order to use homepage sliders, you may need to enable home page slider at "Enable Homepage Slider".
+				</p>
+
+				<li><strong>CMS Block ID</strong> - Set CMS block ID for each sliders.</li>
+
+				<p>&nbsp;</p>
+			</ul>
+			<p>&nbsp;</p>
+			
+			<h2 id="menu_setting">Menu Settings</h2>
+
+			<p>
+				In this tab, you can set options related to configure menu.
+			</p>
+			
+			<ul>
+				<li><strong>Enable Menu</strong> - If set to yes, enables to configure Trego menus.</li>
+				<li><strong>Menu Type</strong> - Choose slider type for homepage.(4 types)</li>
+				
+				<br>
+				<p>Default Menu</p>
+				<img src="library/images/menu1.png" />
+				<br>
+				<p>Mega Menu</p>
+				<img src="library/images/menu3.png" />
+				<br>
+				<p>Menu with Thumbnail Image</p>
+				<img src="library/images/menu2.png" />
+				<br>
+
+				<li><strong>Show Levels(Default Menu)</strong> - Select levels for default menu.</li>
+				<li><strong>Show Columns(Mega Menu)</strong> - Select column count for mega menu.</li>
+
+			</ul>
+			
+			<p>&nbsp;</p>
+			
+		</div>
+	</div>
+	
+	<!-- Theme Settings -->
+	<div id="tab3" class="contentwrap">
+		<div class="sidebar">
+			<ul>
+				<li><a href="#header_setting">Header</a></li>
+				<li><a href="#categoryview">Category View</a></li>
+				<li><a href="#gridmode">Category View(Grid Mode)</a></li>
+				<li><a href="#listmode">Category View(List Mode)</a></li>
+				<li><a href="#productlabel">Product Label</a></li>
+				<li><a href="#productview">Product View</a></li>
+				<li><a href="#footer_setting">Footer</a></li>
+				<li><a href="#customization_setting">Customization Settings</a></li>
+				<li><a href="#theme_installation">Theme Installation</a></li>
+			</ul>
+		</div>
+				
+		<div class="pagecontent">
+		
+			<h1>Theme Settings</h1>
+
+			<p>This theme is equipped with the dedicated administrative module which offers a variety of additional settings. Go to System > Configuration > Trego > Theme Settings section in Magento admin panel to configure the basic settings of the theme.</p>
+			
+			<h2 id="header_setting">Header</h2>
+			
+			<p>In this tab, you can set options related to the header section.</p>
+			<ul>
+				<li><strong>Hide Empty Cart on Mobile Devices</strong> - If set to yes, hide mini cart on mobile devices.</li>
+				<p>&nbsp;</p>
+				<img src="library/images/minicart-image.png" />
+				<br/>
+				<li><strong>Enable Minimized Menu on Laptop Screen</strong> - If set to yes, will show minimized menu for 13", 14" laptop browsers.</li>
+				<br>
+				<img src="library/images/mini-menu.png" />
+			</ul>
+			<p>&nbsp;</p>
+			
+			<h2 id="categoryview">Category View</h2>
+
+			<p>
+				In this tab, you can set options related to the category view. Category view presents the list of products from the selected category.
+			</p>
+			
+			<ul>
+				<li><strong>Alternative Image</strong> - Show alternative image on mouse hover over the main image.</li>
+				<li><strong>Show right sidebar</strong> - If set to Yes, show right sidebar in category page, if No, it will show products in 3 columns mode.</li>
+				<br>
+				<img src="library/images/right_sidebar.png" />
+				<br>
+				<li><strong>Hide Compare Button</strong> - If set to Yes, hide compare button on the toolbar.</li>
+				<li><strong>Keep Image Aspect Ratio</strong> - Keep/resize product images.</li>
+				<li><strong>Image Width</strong> - Resizing image width.</li>
+				<li><strong>Image Height</strong> - Resizing image height.</li>
+			</ul>
+			
+			<p>&nbsp;</p>
+		
+			<h2 id="gridmode">Category View(Grid Mode)</h2>
+			
+			<p>
+				In this tab, you can set options related to the grid mode of the category view.
+			</p>
+
+			<ul>
+				<li><strong>Product Hover Links</strong> - If set to Yes, show jquery effect for the links such as 'Add To Cart', 'Add To Compare'. In this case the links will be displayed inside the product image.</li>
+				<br>
+				<img src="library/images/hoverlinks_effect.png" />
+				<br>
+				<li><strong>Product Hover Effect</strong> - Show border effect when hovers on a product, default is Disable.</li>
+				<li><strong>Show Ratings</strong> - Show rating with stars.</li>
+			</ul>
+			
+			<br/>
+			
+			<h2 id="listmode">Category View(List Mode)</h2>
+			
+			<ul>
+				<li><strong>Product Hover Effect</strong> - Show border effect when hovers on a product.</li>
+			</ul>
+
+			<br/>
+			
+			<h2 id="productlabel">Product Label</h2>
+			
+			<p>
+				In this tab, you can set options to show/hide product labels.
+			</p>
+
+			<p><strong>Important:</strong>
+			
+				<p>In order to display product labels, you may need to reindex the data and flush the cache after marking products as new and after setting a special price.
+				</p>
+			
+			<ul>
+				<li><strong>Show "New" Label</strong> - If set to Yes, will show a "New" label on the main image of all new products. The label will be displayed in both product and catalog views.</li>
+
+				<br>
+				<p><strong>Note:</strong>
+			
+				<p>To promote any product as new, go to Catalog > Manage Products and select the product. In Set Product as New from Date and Set Product as New from Date fields, enter the date range in which the product will be promoted as a new product.
+				</p>
+				
+				<li><strong>Show "Sale" Label</strong> - If set to Yes, will show a "Sale" label on the main image of all products with special price. The label will be displayed in both product and catalog views.</li>
+				<br>
+				<p><strong>Note:</strong>
+			
+				<p>To set a special price go to Catalog > Manage Products, select the product and enter a special price in Special Price field. In Special Price From/To Date field you can enter a date range within which the special price will be active. This price will apply automatically when the From Date arrives and deactivate automatically when the To Date arrives. If you leave this range blank, the Special Price will apply until you remove it.
+				</p>
+				<br>
+				<img src="library/images/new_sale.png" />
+				<br>
+			</ul>
+			
+			<br/>
+
+			<h2 id="productview">Product View</h2>
+			
+			<p>
+				In this tab, you can set options for product view page.
+			</p>
+			
+			<ul>
+				<li><strong>Related Products Checkbox</strong> - Enable checkbox for related products.</li>
+				<li><strong>Product image ratio</strong> - You can set the aspect ratio for producdt images.</li>
+			</ul>
+			
+			<br/>
+			
+			<h2 id="footer_setting">Footer</h2>
+			
+			<p>
+				In this tab, you can set options related to the footer section.
+			</p>
+							
+			<ul>
+				<li><strong>Copyrights Text</strong> - You can set the copyrights text.</li>
+				<li><strong>Show Newsletter Subscribe Form</strong> - If set to Yes, will show newsletter subscribe form in the footer.</li>
+			</ul>
+			
+			<br/>
+			
+			<h2 id="customization_setting">Customization Settings</h2>
+			
+			<p>
+				In this tab, you can set options related customizing the theme.
+			</p>
+			
+			<ul>
+				<li><strong>Load Custom CSS</strong> - If set to Enable, load "custom.css" file is located in skin/frontend/default/trego/css directory.</li>
+			</ul>
+		
+			<p>&nbsp;</p>
+
+			<h2 id="theme_installation">Theme Installation.</h2>
+			
+			<p>
+				In this tab, you can set options related theme installation for static blocks and cms pages.
+				Trego Supports "About US" page as a static block, to use this you should click "Import Static Blocks" and "Import CMS Pages" after theme installation.
+			</p>
+
+			<img src="library/images/aboutus.png" />
+			
+			<p>&nbsp;</p>
+			
+		</div>
+	</div>
+	
+	<!-- Shop -->
+	<div id="tab5" class="contentwrap">
+		
+		<div class="sidebar">
+			<ul>
+				<li><a href="#themedesign_color">Color</a></li>
+				<li><a href="#themedesign_font">Font</a></li>
+				<li><a href="#themedesign_page">Page</a></li>
+				<li><a href="#themedesign_header">Header</a></li>
+				<li><a href="#themedesign_footer">Footer</a></li>
+			</ul>
+		</div>
+
+		<div class="pagecontent">
+		
+		<h1>Theme Design</h1>
+		
+			<p>
+				This theme is equipped with administrative module which gives you the ability to configure the visual appearance of your store. You can change the colors of many elements by using color pickers or by specifying the color code manually. You can also apply textures (patterns) for the main sections of the page. <br>Go to System > Configuration > Trego > Theme Design section to configure the theme. Names of most of the options are pretty self-explanatory.
+			</p>
+
+			<p><strong>Note:</strong>
+			
+			<p>
+				It is a good idea to disable Magento cache before you start to configure your store. Otherwise you will need to flush the cache in order to see any changes you have made in the config.
+			</p>
+
+			<h2 id="themedesign_color">Colors</h2>
+
+			<p>
+				In this tab, you can set basic colors for the entire page, these colors will be inherited by all sections of the page.
+			</p>
+
+			<ul>
+				<li><strong>Basic Colors</strong> - You can set basic colors for the entire page. These colors will be inherited by all sections of the page.</li>
+				<li><strong>Buttons</strong> - You can set options related to fonts.</li>
+				<li><strong>Product Colors</strong> - You can set color options related to products.</li>
+				<li><strong>Other</strong> - Other color options.</li>
+			</ul>
+
+			<br>
+
+			<h2 id="themedesign_font">Font</h2>
+
+			<p>
+				In this tab, you can set options related to fonts.
+			</p>
+
+			<h2 id="themedesign_page">Page</h2>
+
+			<p>
+				In this tab, you can set options related to page background.
+			</p>
+
+			<ul>
+				<li><strong>Background Color</strong> - Background color of the entire page.</li>
+				<li><strong>Texture</strong> - Choose texture mode for background, preview is available.</li>
+				<br>
+				<img src="library/images/themedesign_page.png" />
+				<br>
+			</ul>		
+
+
+			<h2 id="themedesign_header">Header</h2>
+
+			<p>
+				In this tab, you can set options related to header.
+			</p>
+			<p><strong>Important:</strong></p>
+			<p>
+				We used background image for left menu bar because of IE8, so to change background color or image of left menu bar, please update image in this path: /skin/frontend/default/trego/images/left-side-bg.png.
+			</p>
+
+			<h2 id="themedesign_footer">Footer</h2>
+
+			<p>
+				In this tab, you can set options related to footer.
+			</p>
+
+			<h2 id="productview">Footer - Top</h2>
+
+			<p>
+				In this tab, you can set options related to top footer area.
+			</p>
+
+			<h2 id="productview">Footer - Bottom</h2>
+
+			<p>
+				In this tab, you can set options related to bottom footer area.
+			</p>
+
+			<br>
+			<img src="library/images/footer.png" />
+			<br>
+			
+		</div>
+	</div>
+					
+	<div id="tab7" class="contentwrap">
+	
+		<div class="sidebar">
+			<ul>
+				<li><a href="#storelocations">Store Locations</a></li>
+				<li><a href="#404page">404 Page Settings</a></li>
+				<li><a href="#twitterfeed">Twitter Feed</a></li>
+				<li><a href="#slider_menu">Slider & Menu</a></li>
+				<li><a href="#socialicons">Social Icons</a></li>
+				<li><a href="#filterproducts">Filterproducts</a></li>
+				<li><a href="#priceslider">Price Slider</a></li>
+			</ul>
+		</div>
+		
+		<div class="pagecontent">
+		
+			<h1>Trego Extensions</h1>
+
+			<p>
+			This theme is equipped with several extensions for its configuration. You can change the settings for each extensions to confiure your own store. <br>Go to System > Configuration > Trego EXTENSIONS section to configure the theme.
+			</p>
+
+			<h2>Ajax Cart</h2>
+			
+			<p>In this tab, you can set options for ajax add to cart and ajax add to links.</p>
+
+			<h2 id="storelocations">Store Locations(Contacts Page)</h2>
+
+			<p>
+				In this tab, you can set options related to Contact Us page, see examples on our demo site 
+			<a href="http://trego.thesmartwave.net/default/contacts/">http://trego.thesmartwave.net/default/contacts/</a>
+			</p>
+
+			<ul>
+				<li><strong>General Settings</strong> - Set options related to google map.</li>
+				<li><strong>Contact Details</strong> - Set options related to contact details</li>
+			</ul>
+			<br>
+
+			<h2 id="404page">404 Page Settings</h2>
+
+			<p>
+				In this tab, you can set options related to 404 error page, trego supports 2 types of 404 page. 
+			</p>
+
+			<img src="library/images/404.png"/>
+
+			<ul>
+				<li><strong>Enable Module</strong> - Enable to use 404 page.</li>
+				<li><strong>404 Page Type</strong> - You can choose one of two 404 page types.</li>
+			</ul>
+			<br>
+
+			<h2 id="twitterfeed">Twitter Feed</h2>
+
+			<p>
+				In this tab, you can set options related to twitter feed.
+			</p>
+
+			<ul>
+				<li><strong>Twitter Widget ID</strong> - Set twitter widget ID. <br> You can get necessary information about twitter widget from this link <a href="https://twitter.com/settings/widgets">https://twitter.com/settings/widgets</a>.</li>
+				<li><strong>Tweets Counts</strong> - You can set number of tweet counts to show on the footer.</li>
+			</ul>
+			<br>
+
+			<h2 id="slider_menu">Homepage Slider & Menu</h2>
+
+			<p>Described details of this extension in Homepage tab.</p>
+
+			<h2 id="socialicons">Social Icons</h2>
+
+			<p>In this tab, you can configure variables of links for social network sites for the social icons on the footer.</p>
+
+			<img src="library/images/socialicons.png"/>
+			<br>
+
+			<h2 id="filterproducts">Filter Products Configuration</h2>
+
+			<p>You can set options related Filterproducts extension</p>
+
+			<ul>
+				<li><strong>Bestsellers Configuration</strong> - Set options related to best sellers view on category page.</li>
+				<li><strong>Feature Product Configuration</strong> - Set options related to featured products view on homepage.</li>
+				<li><strong>Latest Product Configuration</strong> - Set options related to latest products view on homepage.</li>
+				<li><strong>Special Product Configuration</strong> - Set options related to special products view on homepage.</li>
+			</ul>
+
+			<img style="float:left; margin-right:20px;" src="library/images/latest_product.png"/>
+			<img src="library/images/bestseller.png"/>
+
+			<br>
+
+			<h2 id="priceslider">Blog</h2>
+
+			<p>You can set options related blog extension. To manage blog content please go to Menu > Blog section.
+				<br>You can use blog function of Trego easily as wordpress blog management.
+			</p>
+			<br><p><strong>Main Features</strong></p>
+			<ul>
+				<li>Switchable categories' ID in blog post URL</li>
+				<li>Switchable menu categories</li>
+				<li>Switchable WYSIWYG</li>
+				<li>Excerpt field</li>
+				<li>Tags</li>
+				<li>Tags cloud block</li>
+				<li>Comment fields are pre-filled for logged in users</li>
+				<li>Ability to show blog menu only on blog page</li>
+				<li>Menu shortcut settings</li>
+				<li>Ability to add post menu shortcut</li>
+				<li>.htm rewrite added to post link</li>
+				<li>Last posts widget</li>
+				<li>Multistore RSS feed</li>
+				<li>Ability to switch on/off blog for different stores</li>
+				<li>Ability to duplicate posts</li>
+				<li>Comments per page option</li>
+				<li>Toolbar functionality for blog posts and comments</li>
+			</ul>
+			<br>
+
+			<h2 id="priceslider">Price Slider</h2>
+
+			<p>You can set options related price slider extension.</p>
+
+			<ul>
+				<li><strong>Settings</strong> - Enable Price Slider extension.</li>
+				<li><strong>Price Slider Configuration</strong> - Set options related to price slider functions.</li>
+				<br>
+				<img src="library/images/priceslider.png"/>
+				<br>
+				<p>You should set Catalogue > Manage Categories > Display Settings > IsAnchor field to "Yes" to use this price filter.
+				<li><strong>AJAX Configuration</strong> - Set options related to ajax configuration on category page.</li>
+				<p>
+					This functions supports AJAX for the functions of toolbar including switch Grid and List mode, and sort products.
+				</p>
+			</ul>
+			
+		</div>
+	</div>
+
+	
+	<div id="tab9" class="contentwrap">
+		
+		
+		<div class="sidebar"><a href="#header" class="totop">Back to top</a></div>
+	
+		<div class="pagecontent">
+			<h1>Trego Version Updates</h1>
+	
+			<h2>Version 1.0</h2>
+			<ol>
+				<li>Initial release.(09.12.2013)</li><br/>
+				<li>Version 1.1(09.16.2013)
+					<ul> 
+						<li>Minor CSS Fixes </li>
+						<li>Add more navigation bar function in the right sidebar.</li>
+						<li>Extend configuration function for Homepage Slider</li>
+					</ul>
+				</li>
+				<li>Version 1.2(09.16.2013)
+					<ul> 
+						<li>Minor CSS Fixes </li>
+						<li>Fixed select currency issue in Firefox.</li>
+						<li>Fixed Menubar issue in Firefox and IE.</li>
+					</ul>
+				</li>
+				<li>Version 1.3(09.24.2013)
+					<ul> 
+						<li>Fix a bug for Slider Type 2</li>
+					</ul>
+				</li>
+				<li>Version 1.4(09.26.2013)
+					<ul> 
+						<li>Minor css fixes</li>
+						<li>Integrated Revolution Slider, added a new demo</li>
+					</ul>
+				</li>
+				<li>Version 1.4.1(09.30.2013)
+					<ul>
+						<li>Fixed menu issues for laptop and iPad view</li>
+						<li>Fixed tax price issue for mini-cart</li>
+					</ul>
+				</li>
+				<li>Version 1.4.2(10.7.2013)
+					<ul>
+						<li>Fixed compile error on Magento 1.8.0</li>
+					</ul>
+				</li>
+				<li>Version 1.4.3(10.14.2013)
+					<ul>
+						<li>Fixed importing static block issue</li>
+					</ul>
+				</li>
+				<li>Version 1.5.0(10.17.2013)
+					<ul>
+						<li>Blog Extension is READY!!</li>
+					</ul>
+				</li>
+				<li>Version 1.6.0(11.8.2013)
+					<ul>
+						<li>New Home/Slider version available</li>
+					</ul>
+				</li>
+				<li>Version 1.6.1(11.15.2013)
+					<ul>
+						<li>Added Hiding compare button on category page feature</li>
+						<li>Fixed add to cart issue for Grouped products</li>
+					</ul>
+				</li>
+				<li>Version 1.6.2(11.26.2013)
+					<ul>
+						<li>Added Ajaxcart feature</li>
+						<li>Added Custom menu feature</li>
+					</ul>
+				</li>
+				<li>Version 1.6.3(11.27.2013)
+					<ul>
+						<li>Added theme setting for keep product image aspect ratio on category page.</li>
+					</ul>
+				</li>
+				<li>Version 1.6.4(12.03.2013)
+					<ul>
+						<li>Fixed ajaxcart frontend issue.</li>
+					</ul>
+				</li>
+				<li>Version 2.0(12.14.2013)
+					<ul>
+						<li>Magento 1.8.1 ready.</li>
+						<li>Added product options on the mini-cart.</li>
+					</ul>
+				</li>
+				<li>Version 2.0.1(12.18.2013)
+					<ul>
+						<li>Fixed ajax cart issue on SSL pages.</li>
+					</ul>
+				</li>
+				<li>Version 2.0.2(12.19.2013)
+					<ul>
+						<li>Added Homepage Slider for Fullscreen video.</li>
+						<li>Fixed login issue on Magento 1.8.1</li>
+						<li>Fixed adding review issue on Magento 1.8.1</li>
+					</ul>
+				</li>
+				<li>Version 2.0.3(01.07.2014)
+					<ul>
+						<li>Fixed configurable products issue on Product Page</li>
+					</ul>
+				</li>
+				<li>Version 2.0.4(01.08.2014)
+					<ul>
+						<li>Fixed footer container position issue on product review page.</li>
+					</ul>
+				</li>
+				<li>Version 2.0.5(01.11.2014)
+					<ul>
+						<li>Fixed the issue that add to cart with related products.</li>
+						<li>Fixed bundle product style issues.</li>
+					</ul>
+				</li>
+				<li>Version 2.1.0(04.11.2014)
+					<ul>
+						<li>Fixed the placeholder issue on IE.</li>
+						<li>Fixed product image zoom issue on IE9.</li>
+						<li>Fixed some style issues on IE.</li>
+						<li>Fixed some javascript issues on IE.</li>
+					</ul>
+				</li>
+				<li>Version 2.2.0(05.15.2014)
+					<ul>
+						<li>Magento 1.9.0 Ready.</li>
+						<li>Fixed the placeholder issue on IE.</li>
+						<li>Fixed Ajaxcart issue for SSL.</li>
+					</ul>
+				</li>
+				<li>Version 2.3.0(07.17.2014)
+					<ul>
+						<li>Added Quickview.</li>
+						<li>Added Onestepcheckout.</li>
+						<li>Updated Homepage boxslider.</li>
+						<li>Removed jQuery Selectbox</li>
+					</ul>
+				</li>
+				<li>Version 2.3.1(07.23.2014)
+					<ul>
+						<li>Fixed Language, Currency Switcher issue on FF.</li>
+						<li>Fixed Estimate Shipping state selectbox issue.</li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
+	
