@@ -2,9 +2,13 @@
 	<?php echo Mage::getStoreConfig('ajaxcart/general/custom_css');?>
 </style>
 <?php
-$loaderSrc = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'ajaxcart/'.Mage::getStoreConfig('ajaxcart/general/loader_image');
-$imageSize = getimagesize($loaderSrc);
-if (!is_array($imageSize)){
+$loaderSrc = Mage::getBaseDir('media').'ajaxcart/'.Mage::getStoreConfig('ajaxcart/general/loader_image');
+if (file_exists($loaderSrc)) {
+	$imageSize = getimagesize($loaderSrc);
+	if (!is_array($imageSize)){
+		$loaderSrc = $this->getJsUrl('ajaxcart/ajax-loader.gif');
+	}
+}else{
 	$loaderSrc = $this->getJsUrl('ajaxcart/ajax-loader.gif');
 }
 ?>
@@ -12,7 +16,7 @@ if (!is_array($imageSize)){
 <div class ="background-overlay"></div>
 	<p id="loading_mask_loader" class="loader">
 		<img alt="Loading.." src='<?php echo $loaderSrc; ?>'/>
-        <br/>Processing... Please wait...
+        <br/><?php echo $this->__("Processing... Please wait..."); ?>
 	</p>
 </div>
 <div id="after-loading-success-message">

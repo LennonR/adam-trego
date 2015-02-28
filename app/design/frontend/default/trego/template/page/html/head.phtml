@@ -19,14 +19,8 @@
 <?php echo $this->getChildHtml() ?>
 <?php echo $this->helper('core/js')->getTranslatorScript() ?>
 <?php echo $this->getIncludes() ?>
+<!-- TREGO 2.3.2 (11/26/2014) -->
 <script type="text/javascript">
-/*
-    jQuery(document).ready(function(){
-        jQuery("select").each(function(){
-            jQuery(this).selectbox();
-        });
-    });
-*/
     var addEvent =  window.attachEvent||window.addEventListener;
     addEvent("load", function(){
         // Set a timeout...

@@ -3339,6 +3339,31 @@ a.googleplus-icon {
     float: left;
 }
 
+.products-list li.item .product-image-area img {
+    width: 100%;
+    position: relative;
+    opacity: 1;
+    transition: all ease-in 400ms;
+    -webkit-transition: all linear 400ms;
+    -moz-transition: all linear 400ms;
+    -o-transition: all linear 400ms;
+    -ms-transition: all linear 400ms;
+}
+.products-list li.item .product-image-area:hover img {
+    visibility: hidden;
+    opacity: 0;
+}
+.products-list li.item .product-image-area img.hoverImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.products-list li.item .product-image-area:hover img.hoverImage {
+    visibility: visible;
+    opacity: 1;
+}
 /* Sorter and Pager */
 .toolbar .pager {
     display: none;
